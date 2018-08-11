@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>Simple To Do</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="flex flex-col-reverse max-w-sm mx-auto p-2 h-screen sm:flex-col" data-todo="app">
+    <form class="flex h-12 flex-no-shrink" data-todo="form">
+      <input type="text" class="block w-full px-2 border border-grey focus:border-black" data-todo="input" autofocus>
+
+      <button class="bg-green hover:bg-green-dark font-bold py-1 px-6" data-todo="create">Criar</button>
+    </form>
+
+    <ul class="py-4 list-reset flex-grow flex-col overflow-auto" data-todo="list"></ul>
+  </div>
+
+  <script src="main.js" async></script>
+</body>
+</html>
